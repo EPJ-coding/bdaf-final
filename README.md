@@ -12,4 +12,4 @@ By using oracles to introduce off-chain data sources for genuine randomness, man
 ## Something to say
 This repository chronicles our exploration in the field of random numbers, in which we discovered the randomness numbers in Web3 gaming. We have also learned valuable lessons from each case where a system was compromised due to improper handling of randomness. Ultimately, we have distilled a concise conclusion on "the safe usage of random numbers" from the data and literature.
 
-As we conclude this semester, I would like to express my gratitude to Professor Martini for providing us with this opportunity to delve into the intricacies of Web3 and smart contracts.
+As we conclude this semester, I would like to express my gratitude to Professor Martinet for providing us with this opportunity to delve into the intricacies of Web3 and smart contracts.
