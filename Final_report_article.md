@@ -63,7 +63,9 @@ Using an oracle, such as the API provided by Provable Things, you can obtain rea
   
 Using an Oracle API provided by Provable Things, you can provide random data unrelated to the on-chain status by pushing data through the off-chain data stream 
   
-Because the blockchain is a deterministic environment, all nodes must reach the same result to maintain the consistency of the network. However, the generation of real random numbers requires the introduction of a certain degree of uncertainty, which is relatively difficult to achieve in a blockchain environment. In this case, we usually need to rely on external data sources, also known as oracles, to obtain random numbers. Using oracles has many advantages: 
+Because the blockchain is a deterministic environment, all nodes must reach the same result to maintain the consistency of the network. However, the generation of real random numbers requires the introduction of a certain degree of uncertainty, which is relatively difficult to achieve in a blockchain environment. In this case, we usually need to rely on external data sources, also known as oracles, to obtain random numbers.   
+
+**Using oracles has many advantages:** 
  
 **1. Provide true randomness:**  
 > Oracles (like Provable) can obtain real random numbers from external data sources outside the blockchain. These data sources may be random number generators based on physical phenomena, or other trusted third-party   services. 
