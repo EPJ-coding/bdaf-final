@@ -7,7 +7,7 @@ On-chain randomness is vital for activities like games and lotteries, but it mak
  
 By using oracles to introduce off-chain data sources for genuine randomness, manipulation risks are reduced, provided that third-party data is trustworthy and verifiable. On the other hand, verifiable on-chain multi-node random number generation invites multiple nodes to generate provable random responses. These are combined to form the final random number, which can't be manipulated or influenced, even if a node is compromised. Through reward and penalty mechanisms, more nodes are encouraged to participate, enhancing system security. 
  
-Introduction  
+## Introduction  
  
 The concept of On-chain randomness plays a significant role in various applications, such as gaming, lottery, and NFTs. In particular, its application in blockchain games is related to the generation of random rewards and gaming environments. For instance, in-game rewards can be distributed through random NFT minting, and randomness is also used to generate game maps and items. This enhances the challenge and depth of the game, preventing players from cheating by memorizing steps. Moreover, randomness can also impact players' action results, like combat outcomes in strategy games, or skill results in role-playing games.  
   
@@ -18,7 +18,7 @@ However, implementing randomness on the blockchain is not easy. Due to the decen
 In this article, we will collect many on-chain randomness techniques and practical cases, interpret the technical background of various random number generation methods in detail, and analyze the attacks and losses suffered by various blockchain games due to the cracking of on-chain randomness. We will also observe the subsequent corrections of these projects, hoping to organize a relatively good solution for future blockchain games and applications related to on-chain randomness. 
  
  
-Related Work 
+## Related Work 
  
 In the blockchain domain, the generation of random numbers is crucial for tasks like blockchain games and lotteries. However, this also makes random numbers a target for hackers. This article will introduce two common security issues related to random number generation, and how to effectively prevent them. First, we will analyze how to crack the vulnerability of randomly minting NFT rewards, and explain its mechanism with actual code examples. Second, we will explore how to exploit transaction reverts to break random numbers, illustrating the underlying hacker attacks with specific cases. By understanding these attack methods, we can better grasp the security issues of random number generation and take corresponding protective measures. 
   
@@ -51,7 +51,7 @@ Therefore, as shown in the flowchart below, the hacker deployed several attack c
  
 In order to combat this type of attack, PeckShield suggests that developers should remove variables that attackers can control in the generation of random numbers in DApp and add uncontrollable factors provided by external contracts to participate in the generation of random numbers. Also, avoid the draw action and notification action in the same transaction, thereby avoiding the revert of the transaction status, and thereby blocking attacks from hackers. 
   
-Method 
+## Method 
   
 Next, we will attempt to propose two existing solutions to the problem of random number generation in the blockchain environment: (1) using oracle to introduce off-chain data flow and (2) verifiable on-chain multi-node random number generation. Using an oracle, such as the API provided by Provable Things, you can obtain real random numbers from external data sources and ensure the security of data through encryption technology. In the case where the data provided by a third party is trustworthy and verifiable, it effectively reduces the risk of manipulation. On the other hand, verifiable on-chain multi-node random number generation, such as Chainlink Verifiable Random Function (VRF), invites multiple nodes to generate verifiable random responses, and then combines the responses of each node to form the final random number. Even if the node is compromised, it cannot manipulate or influence the generation result of the random number, and encourages more nodes to participate through the reward and punishment mechanism, improving the security of the overall system. 
   
@@ -81,7 +81,7 @@ At the same time, Chainlink uses a token reward and punishment mechanism to enco
 Code example:  
 https://github.com/EPJ-coding/bdaf-final/blob/main/VRF_sample_code.sol  
   
-Conclusion  
+## Conclusion  
  
 In confronting the challenges posed by random number generation within the blockchain ecosystem, we have suggested two viable and currently employed strategies. The first strategy involves the integration of an oracle, which leverages trusted external data sources for the generation of random numbers. This method offers robust data security and significantly diminishes the potential for manipulation. The second strategy involves the use of verifiable, on-chain, multi-node random number generation. This system assures that even if a single node becomes compromised, the overall generation of random numbers remains unaffected. The security of the system is further reinforced by a reward and punishment mechanism.  
  
@@ -90,12 +90,12 @@ It is undeniable that randomness plays a critical role in a myriad of blockchain
 Looking towards the future, continuous development and optimization of these strategies are essential as the blockchain landscape and its associated security threats continue to evolve. Furthermore, exploring new technologies and approaches to enhance the security and integrity of random number generation on the blockchain is crucial. This includes research into advanced cryptographic techniques, the development of more sophisticated consensus algorithms, and the incorporation of quantum computing capabilities for random number generation. 
  
  
-Reference 
-[1] https://inspexco.medium.com/how-hackers-can-become-lucky-in-nft-minting-822f48d4b917 
-[2] https://mp.weixin.qq.com/s/WTiwaIbB7N2VDKKgcXo0Fg 
-[3] https://blog.chain.link/chainlink-vrf-on-chain-verifiable-randomness/#post-title 
-[4] Včelák, Jan et al. “Making NSEC5 Practical for DNSSEC.” (2022) 
-[5] https://github.com/provable-things/ethereum-examples/blob/master/solidity/random-datasource/randomExample.sol 
-[6] https://docs.chain.link/getting-started/intermediates-tutorial 
+Reference  
+[1] https://inspexco.medium.com/how-hackers-can-become-lucky-in-nft-minting-822f48d4b917   
+[2] https://mp.weixin.qq.com/s/WTiwaIbB7N2VDKKgcXo0Fg   
+[3] https://blog.chain.link/chainlink-vrf-on-chain-verifiable-randomness/#post-title   
+[4] Včelák, Jan et al. “Making NSEC5 Practical for DNSSEC.” (2022)   
+[5] https://github.com/provable-things/ethereum-examples/blob/master/solidity/random-datasource/randomExample.sol   
+[6] https://docs.chain.link/getting-started/intermediates-tutorial   
  
 
