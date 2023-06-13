@@ -31,9 +31,7 @@ As one of the most common applications in blockchain games - randomly minting NF
  
 However, when the sources of randomness all use on-chain information or are cracked by hackers, as in this example where only msg.sender, block.timestamp, block.number, and fixed information in the game (gachaCapsule) are used as the sources for the hash value, hackers can implement the same random logic in their own deployed CalculatorContract. They can predict the random result of the roll() function with the contract they deployed, performing extra checks on the rarity (star). When the random result calculated by CalculatorContract is the rarest five stars, they can execute the roll() function in the same block immediately afterwards, allowing them to obtain the rarest NFT. 
  
- 
-
- ![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/fc2d611e-6189-440e-a457-dcef807e7deb)
+ ![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/692238d0-f8ca-48d8-b99b-280b492c0736)
 
  
 2. Exploiting Transaction Revert to Break Random Numbers 
