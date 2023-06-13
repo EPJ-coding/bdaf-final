@@ -24,7 +24,7 @@ In this article, we will collect many on-chain randomness techniques and practic
  
 In the blockchain domain, the generation of random numbers is crucial for tasks like blockchain games and lotteries. However, this also makes random numbers a target for hackers. This article will introduce two common security issues related to random number generation, and how to effectively prevent them. First, we will analyze how to crack the vulnerability of randomly minting NFT rewards, and explain its mechanism with actual code examples. Second, we will explore how to exploit transaction reverts to break random numbers, illustrating the underlying hacker attacks with specific cases. By understanding these attack methods, we can better grasp the security issues of random number generation and take corresponding protective measures. 
   
-*1. Generating Random Numbers Using On-Chain Information - Cracking Randomly Minted NFT Rewards  *
+"1. Generating Random Numbers Using On-Chain Information - Cracking Randomly Minted NFT Rewards"
   
 As one of the most common applications in blockchain games - randomly minting NFT rewards, we found a code example vulnerable to attack from the inspex cybersecurity audit company (https://github.com/InspexCo/gacha-lab), which helps us understand the poor randomness problem of the NFT minting mechanism. Under normal usage, users will call the roll() function and pay GachaTicket tokens as the minting cost. The GachaMachine contract will then randomly calculate the number of stars (rarity) and mint a GachaCapsule NFT for the user.   
 
