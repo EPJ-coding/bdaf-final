@@ -131,5 +131,11 @@ Looking towards the future, continuous development and optimization of these str
 [4] https://www.semanticscholar.org/paper/Making-NSEC5-Practical-for-DNSSEC-V%C4%8Del%C3%A1k-Reyzin/0ab5b708dc244c685fbfb465b5d5282cd4b4d9f6  
 [5] https://github.com/provable-things/ethereum-examples/blob/master/solidity/random-datasource/randomExample.sol   
 [6] https://docs.chain.link/getting-started/intermediates-tutorial   
- 
+[7] https://kknews.cc/zh-tw/tech/za95bjg.html
+[8] https://www.blockvalue.com/news/20200920644588.html
+[9] https://www.blockvalue.com/news/20200414289053.html
+[10]https://www.blockvalue.com/baike/20200318244786.html
+[11]https://www.blockvalue.com/baike/20200731534001.html
+[12]https://www.blockvalue.com/news/20200414289128.html
+[13]https://ithelp.ithome.com.tw/m/articles/10287325
 
