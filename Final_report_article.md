@@ -29,7 +29,7 @@ In the blockchain domain, the generation of random numbers is crucial for tasks 
   
 ### **1. Generating Random Numbers Using On-Chain Information - Cracking Randomly Minted NFT Rewards**
   
-As one of the most common applications in blockchain games - randomly minting NFT rewards, we found a code example vulnerable to attack from the inspex cybersecurity audit company [InspexCo-gacha-lab](https://github.com/InspexCo/gacha-lab), which helps us understand the poor randomness problem of the NFT minting mechanism. Under normal usage, users will call the roll() function and pay GachaTicket tokens as the minting cost. The GachaMachine contract will then randomly calculate the number of stars (rarity) and mint a GachaCapsule NFT for the user.   
+As one of the most common applications in blockchain games - randomly minting NFT rewards, we found a code example vulnerable to attack from the inspex cybersecurity audit company [(InspexCo-gacha-lab)](https://github.com/InspexCo/gacha-lab), which helps us understand the poor randomness problem of the NFT minting mechanism. Under normal usage, users will call the roll() function and pay GachaTicket tokens as the minting cost. The GachaMachine contract will then randomly calculate the number of stars (rarity) and mint a GachaCapsule NFT for the user.   
 
 ![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/24f8bdc4-a295-4923-8986-37aa6da180ca)
 
@@ -104,7 +104,7 @@ Because the blockchain is a deterministic environment, all nodes must reach the 
 >**3. Reduce the risk of manipulation:**  
 >> Because the random numbers provided by the oracle come from external data sources outside the blockchain, they will not be manipulated by other participants in the blockchain network. Compared with random number generation that only relies on internal data in the blockchain (such as block hash or timestamp), this can significantly reduce the risk of manipulation. 
   
-**Code example:** https://github.com/EPJ-coding/bdaf-final/blob/main/Orcale_sample_code.sol 
+**Code example:** [Orcale_sample_code](https://github.com/EPJ-coding/bdaf-final/blob/main/Orcale_sample_code.sol) 
   
 ### **2. Verifiable On-chain Multi-node Random Number Generation - Chainlink Verifiable Random Function**  
   
@@ -115,7 +115,7 @@ At the same time, Chainlink uses a token reward and punishment mechanism to enco
 ![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/58732514-4e95-4108-8175-0fdb7de1cb64)
 
  
-**Code example:**  https://github.com/EPJ-coding/bdaf-final/blob/main/VRF_sample_code.sol  
+**Code example:**  [VRF_sample_code](https://github.com/EPJ-coding/bdaf-final/blob/main/VRF_sample_code.sol)  
   
 ## Conclusion  
  
