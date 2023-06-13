@@ -32,6 +32,31 @@ As one of the most common applications in blockchain games - randomly minting NF
 
  
 However, when the sources of randomness all use on-chain information or are cracked by hackers, as in this example where only msg.sender, block.timestamp, block.number, and fixed information in the game (gachaCapsule) are used as the sources for the hash value, hackers can implement the same random logic in their own deployed CalculatorContract. They can predict the random result of the roll() function with the contract they deployed, performing extra checks on the rarity (star). When the random result calculated by CalculatorContract is the rarest five stars, they can execute the roll() function in the same block immediately afterwards, allowing them to obtain the rarest NFT. 
+
+```Solidity 
+function roll() external {
+
+    gachaTicket.transferFrom(msg.senderm, address(this), gachaCost);
+    uint256 rand = _random();
+    uint256 stars;
+    if(rand <1){ 
+        stars = 5;
+    }else if(rand < 5){
+        stars = 4;
+    }else if(rand < 15){
+        stars = 3;
+    }else if(rand < 50){
+        stars = 2;
+    }else (
+        stars = 1;
+    )
+    gachaCapsule.mint(msg.sender, stars);
+}
+
+function _random() internal returns (uint256){
+    return uint256(keccak256(abi.encodePacked(block.timestamp, block.number, msg.sender , gachaCapsule.totalsupply()))) % 100 ;
+}
+```
  
  ![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/692238d0-f8ca-48d8-b99b-280b492c0736)
 
