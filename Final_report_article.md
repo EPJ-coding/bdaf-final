@@ -70,8 +70,7 @@ Because the blockchain is a deterministic environment, all nodes must reach the 
 **3. Reduce the risk of manipulation:**  
 > Because the random numbers provided by the oracle come from external data sources outside the blockchain, they will not be manipulated by other participants in the blockchain network. Compared with random number generation that only relies on internal data in the blockchain (such as block hash or timestamp), this can significantly reduce the risk of manipulation. 
   
-Code example:  
-https://github.com/EPJ-coding/bdaf-final/blob/main/Orcale_sample_code.sol 
+**Code example:** https://github.com/EPJ-coding/bdaf-final/blob/main/Orcale_sample_code.sol 
   
 ### **2. Verifiable On-chain Multi-node Random Number Generation - Chainlink Verifiable Random Function**  
   
