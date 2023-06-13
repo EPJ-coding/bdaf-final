@@ -78,6 +78,7 @@ Chainlink Verifiable Random Function (VRF) is implemented based on this verifiab
   
 At the same time, Chainlink uses a token reward and punishment mechanism to encourage more node providers to join, provide more difficult to break randomness, and punish low-quality and/or dishonest node operators, and remove them from future randomness sources. , Provide higher security for smart contract developers and their users. 
  
+![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/58732514-4e95-4108-8175-0fdb7de1cb64)
 
  
 Code example:  
