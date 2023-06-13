@@ -62,13 +62,13 @@ Using an Oracle API provided by Provable Things, you can provide random data unr
 Because the blockchain is a deterministic environment, all nodes must reach the same result to maintain the consistency of the network. However, the generation of real random numbers requires the introduction of a certain degree of uncertainty, which is relatively difficult to achieve in a blockchain environment. In this case, we usually need to rely on external data sources, also known as oracles, to obtain random numbers. Using oracles has many advantages: 
  
 **1. Provide true randomness:**  
-   Oracles (like Provable) can obtain real random numbers from external data sources outside the blockchain. These data sources may be random number generators based on physical phenomena, or other trusted third-party   services. 
+> Oracles (like Provable) can obtain real random numbers from external data sources outside the blockchain. These data sources may be random number generators based on physical phenomena, or other trusted third-party   services. 
   
 **2. Security:**  
-Oracles use encryption technology to ensure the security of data. This means that even if the data is intercepted during transmission, its randomness and credibility will not be affected. 
+> Oracles use encryption technology to ensure the security of data. This means that even if the data is intercepted during transmission, its randomness and credibility will not be affected. 
 
 **3. Reduce the risk of manipulation:**  
-Because the random numbers provided by the oracle come from external data sources outside the blockchain, they will not be manipulated by other participants in the blockchain network. Compared with random number generation that only relies on internal data in the blockchain (such as block hash or timestamp), this can significantly reduce the risk of manipulation. 
+> Because the random numbers provided by the oracle come from external data sources outside the blockchain, they will not be manipulated by other participants in the blockchain network. Compared with random number generation that only relies on internal data in the blockchain (such as block hash or timestamp), this can significantly reduce the risk of manipulation. 
   
 Code example:  
 https://github.com/EPJ-coding/bdaf-final/blob/main/Orcale_sample_code.sol 
