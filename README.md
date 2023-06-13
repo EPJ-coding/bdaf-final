@@ -20,7 +20,7 @@ In this article, we will collect many on-chain randomness techniques and practic
 
 ---
 
-We survey this problem in two different aspects
-(1) Using oracle or other real-world data to generate randomness
-(2) Only depend on the data on chain 
+We survey this problem in two different aspects  
+(1) Using oracle or other real-world data to generate randomness  
+(2) Only depend on the data on chain   
 
