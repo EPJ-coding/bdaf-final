@@ -25,8 +25,8 @@ In the blockchain domain, the generation of random numbers is crucial for tasks 
 1. Generating Random Numbers Using On-Chain Information - Cracking Randomly Minted NFT Rewards  
   
 As one of the most common applications in blockchain games - randomly minting NFT rewards, we found a code example vulnerable to attack from the inspex cybersecurity audit company (https://github.com/InspexCo/gacha-lab), which helps us understand the poor randomness problem of the NFT minting mechanism. Under normal usage, users will call the roll() function and pay GachaTicket tokens as the minting cost. The GachaMachine contract will then randomly calculate the number of stars (rarity) and mint a GachaCapsule NFT for the user. 
+![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/24f8bdc4-a295-4923-8986-37aa6da180ca)
 
- 
  
 However, when the sources of randomness all use on-chain information or are cracked by hackers, as in this example where only msg.sender, block.timestamp, block.number, and fixed information in the game (gachaCapsule) are used as the sources for the hash value, hackers can implement the same random logic in their own deployed CalculatorContract. They can predict the random result of the roll() function with the contract they deployed, performing extra checks on the rarity (star). When the random result calculated by CalculatorContract is the rarest five stars, they can execute the roll() function in the same block immediately afterwards, allowing them to obtain the rarest NFT. 
  
