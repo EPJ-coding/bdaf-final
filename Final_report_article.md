@@ -94,7 +94,7 @@ Looking towards the future, continuous development and optimization of these str
 [1] https://inspexco.medium.com/how-hackers-can-become-lucky-in-nft-minting-822f48d4b917   
 [2] https://mp.weixin.qq.com/s/WTiwaIbB7N2VDKKgcXo0Fg   
 [3] https://blog.chain.link/chainlink-vrf-on-chain-verifiable-randomness/#post-title   
-[4] Včelák, Jan et al. “Making NSEC5 Practical for DNSSEC.” (2022)   
+[4] https://www.semanticscholar.org/paper/Making-NSEC5-Practical-for-DNSSEC-V%C4%8Del%C3%A1k-Reyzin/0ab5b708dc244c685fbfb465b5d5282cd4b4d9f6  
 [5] https://github.com/provable-things/ethereum-examples/blob/master/solidity/random-datasource/randomExample.sol   
 [6] https://docs.chain.link/getting-started/intermediates-tutorial   
  
