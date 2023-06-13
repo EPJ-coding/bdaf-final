@@ -1,7 +1,7 @@
 
 
 # On-chain randomness in games  
-![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/b3166e99-6d11-413e-beba-ddcc84d0a91f)
+![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/f67e91d5-b2d9-4398-abdf-7963d88dffd9)
 
 ## Abstract 
  
