@@ -3,7 +3,8 @@
 # On-chain randomness in games  
 ## Abstract 
  
-On-chain randomness is vital for activities like games and lotteries, but it makes random numbers susceptible to hacking. This article discusses two key security concerns and preventive strategies in random number generation:   
+On-chain randomness is vital for activities like games and lotteries, but it makes random numbers susceptible to hacking.   
+**This article discusses two key security concerns and preventive strategies in random number generation:**  
 > (1) using oracles to integrate off-chain data streams for obtaining true random numbers, minimizing manipulation risks  
 > (2) employing on-chain multi-node random number generation.   
  
