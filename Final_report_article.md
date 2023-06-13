@@ -53,7 +53,11 @@ In order to combat this type of attack, PeckShield suggests that developers shou
   
 ## Method 
   
-Next, we will attempt to propose two existing solutions to the problem of random number generation in the blockchain environment: (1) using oracle to introduce off-chain data flow and (2) verifiable on-chain multi-node random number generation. Using an oracle, such as the API provided by Provable Things, you can obtain real random numbers from external data sources and ensure the security of data through encryption technology. In the case where the data provided by a third party is trustworthy and verifiable, it effectively reduces the risk of manipulation. On the other hand, verifiable on-chain multi-node random number generation, such as Chainlink Verifiable Random Function (VRF), invites multiple nodes to generate verifiable random responses, and then combines the responses of each node to form the final random number. Even if the node is compromised, it cannot manipulate or influence the generation result of the random number, and encourages more nodes to participate through the reward and punishment mechanism, improving the security of the overall system. 
+**Next, we will attempt to propose two existing solutions to the problem of random number generation in the blockchain environment:**   
+> (1) using oracle to introduce off-chain data flow   
+> (2) verifiable on-chain multi-node random number generation.  
+
+Using an oracle, such as the API provided by Provable Things, you can obtain real random numbers from external data sources and ensure the security of data through encryption technology. In the case where the data provided by a third party is trustworthy and verifiable, it effectively reduces the risk of manipulation. On the other hand, verifiable on-chain multi-node random number generation, such as Chainlink Verifiable Random Function (VRF), invites multiple nodes to generate verifiable random responses, and then combines the responses of each node to form the final random number. Even if the node is compromised, it cannot manipulate or influence the generation result of the random number, and encourages more nodes to participate through the reward and punishment mechanism, improving the security of the overall system. 
   
 ### **1. Use Oracle - Introducing Trustworthy Third-Party Off-Chain Data Flow** 
   
