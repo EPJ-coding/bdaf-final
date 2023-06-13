@@ -17,3 +17,10 @@ However, implementing randomness on the blockchain is not easy. Due to the decen
   
 
 In this article, we will collect many on-chain randomness techniques and practical cases, interpret the technical background of various random number generation methods in detail, and analyze the attacks and losses suffered by various blockchain games due to the cracking of on-chain randomness. We will also observe the subsequent corrections of these projects, hoping to organize a relatively good solution for future blockchain games and applications related to on-chain randomness. 
+
+---
+
+We survey this problem in two different aspects
+(1) Using oracle or other real-world data to generate randomness
+(2) Only depend on the data on chain 
+
