@@ -36,7 +36,7 @@ However, when the sources of randomness all use on-chain information or are crac
  ![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/692238d0-f8ca-48d8-b99b-280b492c0736)
 
  
-**2. Exploiting Transaction Revert to Break Random Numbers**
+### **2. Exploiting Transaction Revert to Break Random Numbers**
   
 The ecosystem of the EOS chain developed by Block.one once thrived, and the blockchain games on the EOS chain successfully attracted more people to participate in on-chain interactions, including EOSBet, EOSCast, FFgame, EOSDice, EOSWin, etc. However, the relentless hacker attacks posed a serious threat to the EOS ecosystem at that time. Blockchain security company PeckShield pointed out in a report that the principle behind most hacker attacks is related to random number vulnerabilities. 
   
@@ -55,7 +55,7 @@ In order to combat this type of attack, PeckShield suggests that developers shou
   
 Next, we will attempt to propose two existing solutions to the problem of random number generation in the blockchain environment: (1) using oracle to introduce off-chain data flow and (2) verifiable on-chain multi-node random number generation. Using an oracle, such as the API provided by Provable Things, you can obtain real random numbers from external data sources and ensure the security of data through encryption technology. In the case where the data provided by a third party is trustworthy and verifiable, it effectively reduces the risk of manipulation. On the other hand, verifiable on-chain multi-node random number generation, such as Chainlink Verifiable Random Function (VRF), invites multiple nodes to generate verifiable random responses, and then combines the responses of each node to form the final random number. Even if the node is compromised, it cannot manipulate or influence the generation result of the random number, and encourages more nodes to participate through the reward and punishment mechanism, improving the security of the overall system. 
   
-1. Use Oracle - Introducing Trustworthy Third-Party Off-Chain Data Flow 
+### **1. Use Oracle - Introducing Trustworthy Third-Party Off-Chain Data Flow** 
   
 Using an Oracle API provided by Provable Things, you can provide random data unrelated to the on-chain status by pushing data through the off-chain data stream 
   
@@ -73,7 +73,7 @@ Because the random numbers provided by the oracle come from external data source
 Code example:  
 https://github.com/EPJ-coding/bdaf-final/blob/main/Orcale_sample_code.sol 
   
-2. Verifiable On-chain Multi-node Random Number Generation - Chainlink Verifiable Random Function 
+### **2. Verifiable On-chain Multi-node Random Number Generation - Chainlink Verifiable Random Function**  
   
 Chainlink Verifiable Random Function (VRF) is implemented based on this verifiable random function paper[4]. VRF will send invitations to multiple nodes when generating random numbers. Each node will generate a provable random response after receiving the request (using a public key, private key, and the hash value of the seed to generate a random number). The responses of each node will then be XORed to form the final random number. The working principle of the VRF is to combine the block data that is still unknown at the time of request with the private key of each node to generate random numbers and cryptographic proof. Each node uses its private key when generating randomness and verifies it on the chain using blockchain wallet signatures and proof verification functions before sending it to the user contract. Even if the node is compromised, it cannot manipulate or control the result of random number generation, because the cryptographic proof on the chain will fail, which will be immediately and permanently visible on the blockchain. Users no longer rely on nodes that stop responding and/or do not provide randomness with valid proof. 
   
@@ -82,8 +82,7 @@ At the same time, Chainlink uses a token reward and punishment mechanism to enco
 ![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/58732514-4e95-4108-8175-0fdb7de1cb64)
 
  
-Code example:  
-https://github.com/EPJ-coding/bdaf-final/blob/main/VRF_sample_code.sol  
+**Code example:**  https://github.com/EPJ-coding/bdaf-final/blob/main/VRF_sample_code.sol  
   
 ## Conclusion  
  
