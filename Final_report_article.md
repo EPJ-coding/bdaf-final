@@ -34,6 +34,7 @@ However, when the sources of randomness all use on-chain information or are crac
  
 
  
+![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/f02d4cdf-eeae-41cd-af49-bb98eafec884)
 
  
  
