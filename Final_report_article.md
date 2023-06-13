@@ -33,10 +33,8 @@ However, when the sources of randomness all use on-chain information or are crac
  
  
 
- 
-![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/f02d4cdf-eeae-41cd-af49-bb98eafec884)
+ ![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/fc2d611e-6189-440e-a457-dcef807e7deb)
 
- 
  
 2. Exploiting Transaction Revert to Break Random Numbers 
   
