@@ -90,7 +90,7 @@ It is undeniable that randomness plays a critical role in a myriad of blockchain
 Looking towards the future, continuous development and optimization of these strategies are essential as the blockchain landscape and its associated security threats continue to evolve. Furthermore, exploring new technologies and approaches to enhance the security and integrity of random number generation on the blockchain is crucial. This includes research into advanced cryptographic techniques, the development of more sophisticated consensus algorithms, and the incorporation of quantum computing capabilities for random number generation. 
  
  
-Reference  
+## Reference  
 [1] https://inspexco.medium.com/how-hackers-can-become-lucky-in-nft-minting-822f48d4b917   
 [2] https://mp.weixin.qq.com/s/WTiwaIbB7N2VDKKgcXo0Fg   
 [3] https://blog.chain.link/chainlink-vrf-on-chain-verifiable-randomness/#post-title   
