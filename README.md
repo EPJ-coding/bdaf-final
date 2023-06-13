@@ -9,6 +9,8 @@ On-chain randomness is vital for activities like games and lotteries, but it mak
  
 By using oracles to introduce off-chain data sources for genuine randomness, manipulation risks are reduced, provided that third-party data is trustworthy and verifiable. On the other hand, verifiable on-chain multi-node random number generation invites multiple nodes to generate provable random responses. These are combined to form the final random number, which can't be manipulated or influenced, even if a node is compromised. Through reward and penalty mechanisms, more nodes are encouraged to participate, enhancing system security. 
 
+**The complete article： https://github.com/EPJ-coding/bdaf-final/blob/main/Final_report_article.md**
+
 ## Something to say
 This repository chronicles our exploration in the field of random numbers, in which we discovered the randomness numbers in Web3 gaming. We have also learned valuable lessons from each case where a system was compromised due to improper handling of randomness. Ultimately, we have distilled a concise conclusion on "the safe usage of random numbers" from the data and literature.
 
