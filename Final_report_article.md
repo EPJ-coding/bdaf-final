@@ -1,7 +1,8 @@
 
 
 # On-chain randomness in games  
-![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/3735d87c-d895-449b-a21e-f48451f50ae6)
+![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/b3166e99-6d11-413e-beba-ddcc84d0a91f)
+
 ## Abstract 
  
 On-chain randomness is vital for activities like games and lotteries, but it makes random numbers susceptible to hacking.   
