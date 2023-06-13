@@ -1,4 +1,5 @@
 # bdaf-final
+![image](https://github.com/EPJ-coding/bdaf-final/assets/124324882/2337963a-dd73-488b-a265-edf016e6b9ec)
 
 # Randomness in games
 
